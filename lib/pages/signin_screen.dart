@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mov/pages/signup_screen.dart';
 import 'package:mov/theme.dart';
 
 class SigninScreen extends StatelessWidget {
@@ -9,7 +10,10 @@ class SigninScreen extends StatelessWidget {
       backgroundColor: BackgroundColor,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 24),
+          padding: EdgeInsets.symmetric(
+            horizontal: horizontalEdge,
+            vertical: verticalEdge,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -93,7 +97,14 @@ class SigninScreen extends StatelessWidget {
                 height: 45,
                 width: MediaQuery.of(context).size.width,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SignupScreen(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: PurpleColor,
                     shape: RoundedRectangleBorder(

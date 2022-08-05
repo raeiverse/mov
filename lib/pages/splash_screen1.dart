@@ -11,7 +11,10 @@ class SplashScreen1 extends StatelessWidget {
       backgroundColor: BackgroundColor,
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.only(top: 50, left: 24, right: 24, bottom: 50),
+          padding: EdgeInsets.symmetric(
+            horizontal: horizontalEdge,
+            vertical: verticalEdge,
+          ),
           child: Column(
             children: [
               Row(

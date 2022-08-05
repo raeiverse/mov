@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+double verticalEdge = 50;
+double horizontalEdge = 24;
+
 Color BackgroundColor = Color(0xff14153D);
 Color WhiteColor = Color(0xffFFFFFF);
 Color PinkColor = Color(0xffFF2667);
