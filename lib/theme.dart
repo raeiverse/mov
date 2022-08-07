@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 double verticalEdge = 50;
 double horizontalEdge = 24;
+double space = 20;
 
 Color BackgroundColor = Color(0xff14153D);
 Color WhiteColor = Color(0xffFFFFFF);
@@ -22,4 +23,8 @@ TextStyle SubTitleText = GoogleFonts.montserrat(
 TextStyle BtnText = GoogleFonts.montserrat(
   color: WhiteColor,
   fontWeight: FontWeight.w700,
+);
+
+TextStyle GlobalText = GoogleFonts.montserrat(
+  color: WhiteColor,
 );
