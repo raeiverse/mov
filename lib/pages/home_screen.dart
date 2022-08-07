@@ -9,11 +9,12 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: BackgroundColor,
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.symmetric(vertical: verticalEdge - 16),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(height: verticalEdge),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: horizontalEdge),
                 child: Row(
@@ -125,6 +126,7 @@ class HomeScreen extends StatelessWidget {
               ),
               SizedBox(height: 16),
               SingleChildScrollView(
+                scrollDirection: Axis.vertical,
                 child: Container(
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: horizontalEdge),
@@ -140,6 +142,12 @@ class HomeScreen extends StatelessWidget {
                           imageUrl: 'assets/coming_pic2.png',
                           title: 'John Wick',
                           genre: 'Action',
+                          score: 'n/a',
+                        ),
+                        ComingSoon_Widget(
+                          imageUrl: 'assets/coming_pic1.png',
+                          title: 'Frozen II',
+                          genre: 'Animation, Kids',
                           score: 'n/a',
                         ),
                       ],
